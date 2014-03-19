@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+   <!--  <item android:id="@+id/action_events"
+          android:icon="@drawable/events"
+          android:title="@string/events"
+          android:showAsAction="ifRoom" />
+     
+    <item android:id="@+id/action_camera"
+          android:icon="@drawable/camera"
+          android:title="@string/camera"
+          android:showAsAction="ifRoom" />
+    
+    <item android:id="@+id/action_logout"
+          android:icon="@drawable/logout"
+          android:title="@string/logout"
+          android:showAsAction="ifRoom" /> --> 
+
+</menu>

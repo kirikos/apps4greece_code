@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   	android:background="@layout/item_background" >
+    
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true" />
+    
+     <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bottom_background" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/back_btn" />
+        
+       
+
+    </RelativeLayout>
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/bottom_layout"
+     android:layout_below="@+id/header_layout" >
+   
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dip" >    
+	 <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:gravity="left"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_below="@+id/description"
+        android:typeface="sans"
+        android:visibility="gone" />
+	 
+	 <ImageView
+        android:id="@+id/map"
+        android:layout_width="25dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/map"
+        android:onClick="openMap"
+        android:visibility="gone" />
+	 
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/loading"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_alignLeft="@+id/image"
+        android:gravity="left"
+        android:layout_marginTop="7dip"
+        android:textColor="#343434"
+        android:textSize="14sp"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+	</RelativeLayout>
+	</ScrollView>
+	
+ <RelativeLayout
+    android:id="@+id/bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:layout_alignParentBottom="true" 
+    android:layout_alignParentLeft="true" 
+    android:layout_alignParentRight="true"
+    android:background="@drawable/bottom_background" >
+    
+<ImageView 
+    android:id="@+id/camera"
+	android:layout_width="30dip"
+   	android:layout_height="wrap_content"
+   	android:layout_alignParentLeft="true"
+   	android:layout_marginLeft="17dip"
+   	android:layout_centerVertical="true"
+   	android:src="@drawable/camera" />
+    
+<ImageView 
+    android:id="@+id/logout"
+	android:layout_width="30dip"
+   	android:layout_height="wrap_content"
+   	android:layout_alignParentRight="true"
+   	android:layout_marginRight="17dip"
+   	android:layout_centerVertical="true"
+   	android:src="@drawable/logout" />
+    
+</RelativeLayout>
+</RelativeLayout>

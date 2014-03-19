@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="register">Register</string>
+    <string name="sign_in">Sign In</string>
+    <string name="name">AppsForGreece</string>
+    <string name="back">Back</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tabs_view">TabsView</string>
+    <string name="logout">Logout</string>
+    <string name="camera">Camera</string>
+    <string name="events">Γεγονότα</string>
+    <string name="gegonota">ΓΕΓΟΝΟΤΑ</string>
+    <string name="all">Αρχικη</string>
+    <string name="koinonia">Κοινωνια</string>
+    <string name="oikonomia">Οικονομια</string>
+    <string name="politismos">Πολιτισμος</string>
+    <string name="app_name">AppsForGreece</string>
+    <string name="title_activity_upload_image">UploadImage</string>
+    <string name="appsforgreece">AppsForGreece</string>
+    <string name="title">Τίτλος&#8230;</string>
+    <string name="description">Περιγραφή&#8230;</string>
+    <string name="uploading">Uploading&#8230;</string>
+    <string name="title_activity_events">Events</string>
+    <string name="title_activity_photo_location">PhotoLocation</string>
+    <string name="service_name">AppsForAthens Service</string>
+    <string name="title_activity_event_notification">EventNotification</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

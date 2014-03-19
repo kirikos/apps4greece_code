@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appsforgreece.gs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="com.appsforgreece.gs.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Goolge Maps API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDObcLt4_7n3G321SUIceY4OyNrKh5zztk" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.appsforgreece.gs.Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.appsforgreece.gs.Register"
+            android:label="@string/register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsforgreece.gs.TabsView"
+            android:label="@string/title_activity_tabs_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name="com.appsforgreece.gs.UploadImage"
+            android:label="@string/title_activity_upload_image"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsforgreece.gs.Events"
+            android:label="@string/title_activity_events"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsforgreece.gs.PhotoLocation"
+            android:label="@string/title_activity_photo_location"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.appsforgreece.gs.NotificationCheck"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/service_name" >
+        </service>
+
+        <receiver android:name="com.appsforgreece.gs.NotificationsSceduledReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.appsforgreece.gs.NotificationsReceiver" >
+        </receiver>
+
+        <activity
+            android:name="com.appsforgreece.gs.EventNotification"
+            android:label="@string/title_activity_event_notification"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
