@@ -25,7 +25,7 @@ cursor:pointer;
 	color: white;
   }
   </style>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC91LqwgiYemryx2QBqRplDD9TpAkLfRm0&amp;sensor=true">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5Jc9g7jeoHNKprOge3KLq0ZAGpJrPWI0&sensor=false">
     </script>
 	<script type="text/javascript" src="/script/jquery-1.9.js"></script>
 </head>
