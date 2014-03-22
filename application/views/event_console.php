@@ -289,11 +289,11 @@ function initialize_distance(m_id,lat,lon,distance) {
 	
 	var myLatlng = new google.maps.LatLng(lat,lon);
 	var sunCircle = {
-        strokeColor: "#04805E",
-        strokeOpacity: 0.8,
+        strokeColor: "#0000CC",
+        strokeOpacity: 0.7,
         strokeWeight: 2,
-        fillColor: "#04805E",
-        fillOpacity: 0.35,
+        fillColor: "#0000CC",
+        fillOpacity: 0.34,
         map: map,
         center: myLatlng,
         radius: parseInt(distance) // in meters
